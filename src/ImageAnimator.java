@@ -24,6 +24,7 @@ public class ImageAnimator extends Application {
     protected StackPane paneForImage = new StackPane();
     protected Timeline animation;
     protected int n = 1;
+    private final static String URLBase = "http://cs.armstrong.edu/liang/common";
 
 
     public static void main(String[] args) {
@@ -90,8 +91,9 @@ public class ImageAnimator extends Application {
     private void getImage() {
         paneForImage.getChildren().clear();
         paneForImage.getChildren().add(new ImageView(new Image(
-                "http://cs.armstrong.edu/liang/common/image/" +
-                        tfPrefix.getText() + n + ".gif")));
+                URLBase +
+                        "/image" + tfPrefix.getText()
+                         + n + ".gif")));
     }
 
     /** Load next image */
