@@ -92,7 +92,7 @@ public class ImageAnimator extends Application {
         paneForImage.getChildren().clear();
         paneForImage.getChildren().add(new ImageView(new Image(
                 URLBase +
-                        "/image" + tfPrefix.getText()
+                        "/image/" + tfPrefix.getText()
                          + n + ".gif")));
     }
 
